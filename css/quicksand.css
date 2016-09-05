@@ -1,0 +1,14 @@
+/* normal */
+@font-face {
+  font-family: 'Quicksand';
+  font-weight: 400;
+  src: url('../fonts/QuicksandBook.otf') format('opentype');
+}
+
+
+/* bold */
+@font-face {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  src: url('../fonts/QuicksandBold.otf') format('opentype');
+}

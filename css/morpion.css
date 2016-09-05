@@ -1,0 +1,108 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 25px;
+}
+
+
+#main-square {
+  margin: 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 320px;
+  border: 1px solid darkgray;
+}
+
+
+/* 9 small squares*/
+.small-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106.6666px;
+  height: 106.6666px;
+  box-sizing: border-box;
+  border: 1px solid darkgray;
+  font-size: 1000%;
+  font-weight: 700;
+  line-height: 55%;
+  text-align: center;
+  padding: 0 0 12px 6px;
+}
+
+
+.blue {
+  background-color: lightblue;
+}
+
+.purple {
+  background-color: #FCC7FC;
+}
+
+/* o */
+.nought:after {
+  content:"o";
+  color: darkblue;
+  font-weight: 700;
+}
+
+/* x */
+.cross:after {
+  content:"x";
+  color: purple;
+  font-weight: 700;
+}
+
+
+
+/* Lines */
+.horizontal-line, .vertical-line, .diagonal-line1, .diagonal-line2 {
+  border-radius: 12px;
+  background: #C7F466;
+  position: absolute;
+}
+
+
+.horizontal-line {
+  width: 320px;
+  height: 16px;
+  top: 145px;
+/*  top: 250px;*/
+/* top: 360px; */
+}
+
+
+.vertical-line {
+  height: 320px;
+  width:16px;
+  top: 100px;
+  /*left: 42%;*/
+  /*left: 49.5%;*/
+  /*left: 57%;*/
+}
+
+.diagonal-line1, .diagonal-line2 {
+  height: 400px;
+  width:16px;
+  top: 60px;
+  left: 50%;
+}
+
+.diagonal-line1 {
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+
+.diagonal-line2 {
+  -webkit-transform: rotate(43deg); /* Chrome, Safari, Opera */
+  transform: rotate(43deg);
+}
